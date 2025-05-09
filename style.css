@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    height: 80px;
+    background-color: #313449;
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+}
+.hero-section{
+    display: flex;
+    height: 70vh;
+    background-color: #f4f1de;
+    color: black;
+}
+.hero-content{
+   width: 50vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.hero-content h1{
+    color: #e07a5f;
+}
+.hero-image{
+    height: 100%;
+    width: 70%;
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:500px){
+    .hero-section{
+        height: 50vh;
+    }
+    .hero-content{
+        width:100%;
+        display: flex;
+    }
+    .hero-image{
+        width:0;
+    }
+}
+.tasks{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: #ebf3ef;
+}
+.tasks a{
+    text-decoration: none;
+}
+.taskpanel{
+    height: 13vh;
+    margin-bottom: 10vh;
+    margin-right:8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.taskpanel:hover{
+    transform: translateX(5px);
+    border-color: brown;
+ }
+.task-image{
+    height: 13vh;
+    width: 13vh;
+    font-size: 8vh;
+    background-color: #313449;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskoption{
+    height: 100%;
+    width:40vw;
+    color:white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:800px){
+    .tasks{
+        padding-left:5vw;
+    }
+    .taskoption{
+        width:26vw;
+        font-size:1.2rem;
+    }
+}
+#taskoption-1{
+    background-color:rgb(52, 123, 71);
+}
+#taskoption-2{
+    background-color: rgb(5, 113, 171) ;
+}
+#taskoption-3{
+    background-color: rgb(223, 153, 33) ;
+}
+#taskoption-4{
+    background-color: rgb(15, 163, 158) ;
+}
+#taskoption-5{
+    background-color: rgb(224, 7, 123);
+}
+#taskoption-6{
+    background-color: rgb(4, 186, 110);
+}
+footer{
+    height:50px;
+    padding-top:20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
